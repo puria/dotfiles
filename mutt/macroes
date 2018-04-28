@@ -1,0 +1,23 @@
+#  vim: set ts=8 sw=4 tw=0 ft=muttrc :
+set query_command = "goobook query %s"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
+
+macro index S "|/usr/bin/spamassassin -r"
+macro index H "|/usr/bin/sa-learn --ham  --no-rebuild --single"
+macro index R "!/usr/bin/sa-learn --rebuild"
+macro index \cb |urlscan\n 'call urlscan to extract URLs out of a message'
+macro pager \cb |urlscan\n 'call urlscan to extract URLs out of a message'
+macro compose v "<edit-from>^Uidentity_<tab>" "Select from"
+
+macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/accounts/puria@dyne.org/account<enter><change-folder>!<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/nafisi@gmail.com/account<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/puria@netstudent.polito.it/account<enter><change-folder>!<enter>'
+
+bind pager      <up>    previous-line
+bind pager      <down>  next-line
+
+bind index,pager @ compose-to-sender
+macro index B '<enter-command>toggle sidebar_visible<enter>'
+macro pager B '<enter-command>toggle sidebar_visible<enter>'
+macro index c '<change-folder>?<change-dir><home>^K=<enter>'

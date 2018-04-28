@@ -1,0 +1,8 @@
+# vim: set ts=8 sw=4 tw=0 ft=muttrc :
+color index_subject   color64      color233   "~R ~s'Fixed|Passed'"
+color index           color233     color64    "~U ~s'Fixed|Passed'"
+color index_subject   color160     color233   "~R ~s'Errored|Failed|Still Failing|Broken'"
+color index           color233     color160   "~U ~s'Errored|Failed|Still Failing|Broken'"
+color index_subject   color179     color233   "~C dev@dyne.org"
+color index_author    color179     color233   "~C dev@dyne.org"
+color status          color179     color233

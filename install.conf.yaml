@@ -9,5 +9,10 @@
     ~/.vimrc: vimrc
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
+    ~/.mutt/:
+        create: true
+        glob: true
+        path: mutt/*
+        relink: true
 
 
