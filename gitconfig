@@ -1,0 +1,8 @@
+[user]
+	name = Puria Nafisi Azizi
+	email = puria@dyne.org
+	signingkey = 721B841D47C1299B09E4C17657AA9EBCB1DA7141
+[core]
+	editor = vim
+[commit]
+	gpgsign = true

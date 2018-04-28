@@ -1,0 +1,10 @@
+host repo
+hostname repo.axant.it
+user repo
+identityFile ~/.ssh/repo
+
+host ks.studiolegale.it
+hostname ks.studiolegale.it
+user axant
+identityFile ~/.ssh/axant
+
