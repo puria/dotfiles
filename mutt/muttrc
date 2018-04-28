@@ -1,17 +1,10 @@
-set ssl_starttls=yes
-set ssl_force_tls=yes
-
 set move = no
 set imap_keepalive = 900
 ignore *
 unignore From To Cc Subject Date Reply-To Organization X-Mailer User-Agent List-Id X-Operating-System
 hdr_order From: Date: To: Cc: Subject:
 set imap_idle
-set header_cache="~/.cache/mutt/headers"
-set message_cachedir="~/.cache/mutt/bodies"
 #set index_format="%4C %Z %?X?%X& ? %{%d %b} %-12.12L %?M?(#%03M)&(%4c)? %?y?(%.20Y) ?%s"
-
-#mailboxes ='INBOX' ='sent'
 
 set envelope_from
 set copy
@@ -19,7 +12,6 @@ set editor="vim -c 'set tw=76' -c 'set fo=tcq' -c 'set bs=eol' -c 'set spell' -c
 set query_command = "goobook query %s"
 set charset="utf8"
 set send_charset="utf8"
-#set ascii_chars
 set edit_headers
 set nomark_old
 set delete
@@ -46,9 +38,6 @@ set forward_quote
 set abort_noattach = ask-yes
 set attach_keyword = "\\<attach(|ed|ments?)|alleg(|o|ato|are)\\>"
 unset mime_forward
-
-
-set certificate_file=~/.mutt/certificates
 
 auto_view text/html application/x-pgp-message
 auto_view application/zip
