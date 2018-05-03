@@ -13,6 +13,7 @@ macro compose v "<edit-from>^Uidentity_<tab>" "Select from"
 macro index <f1> '<sync-mailbox><enter-command>source ~/.mutt/accounts/puria@dyne.org/account<enter><change-folder>!<enter>'
 macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/accounts/nafisi@gmail.com/account<enter><change-folder>!<enter>'
 macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/accounts/puria@netstudent.polito.it/account<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/accounts/info@puria.it/account<enter><change-folder>!<enter>'
 
 bind pager      <up>    previous-line
 bind pager      <down>  next-line
