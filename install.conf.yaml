@@ -1,18 +1,32 @@
 - clean: ['~']
 
+- tap:
+    - git-time-metric/gtm
+
+- brew:
+    - gtm
+
 - link:
-    ~/.bash_aliases: bash_aliases
-    ~/.gitconfig: gitconfig
+    ~/.bash_aliases:
+    ~/.gitconfig:
     ~/.ssh/config:
         path: ssh/config
         create: true
-    ~/.vimrc: vimrc
-    ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    ~/.vimrc:
+    ~/.zprofile:
+    ~/.zshrc:
     ~/.mutt/:
-        create: true
         glob: true
         path: mutt/*
+        create: true
+        relink: true
+    ~/.oh-my-zsh/:
+        glob: true
+        path: oh-my-zsh/*
+        create: true
         relink: true
 
+- shell:
+  - [git submodule update --init --recursive, "Installing/updating submodules"]
+  - [vim +PluginInstall +qall, "Installing vim plugins"]
 

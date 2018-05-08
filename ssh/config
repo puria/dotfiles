@@ -8,3 +8,8 @@ hostname ks.studiolegale.it
 user axant
 identityFile ~/.ssh/axant
 
+host pie
+hostname it37.siteground.eu
+user postinte
+IdentityFile ~/.ssh/axant
+port 18765

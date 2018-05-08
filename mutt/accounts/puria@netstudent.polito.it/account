@@ -10,7 +10,7 @@ set message_cachedir = "$HOME/.mutt/cache/puria@netstudent.polito.it.bodies"
 set certificate_file = "$HOME/.mutt/certificates/puria@netstudent.polito.it.certificate"
 
 set imap_user        = "puria@netstudent.polito.it"
-set smtp_url         = "smtp://puria@netstudent.polito.it@netstudent.polito.it:587/"
+set smtp_url         = "smtps://puria@netstudent.polito.it@netstudent.polito.it:587/"
 
 set status_format    = "%>═[Folder:$imap_user/%f Msgs:%m%?n? New:%n?%?d? Del:%d?%?t? Tag:%t?%?l??]%?p?---- .: %p waiting to send :. ? [%P]"
 set status_format    = "═══[ Folder: $imap_user/%f ]════[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]═══%>═%?p?( %p waiting to send)?═══"
