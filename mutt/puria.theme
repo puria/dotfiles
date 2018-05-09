@@ -6,3 +6,4 @@ color index           color233     color160   "~U ~s'Errored|Failed|Still Failin
 color index_subject   color179     color233   "~C dev@dyne.org"
 color index_author    color179     color233   "~C dev@dyne.org"
 color status          color179     color233
+color index           color233     color160   "~U ~s'[SPAM]'"
