@@ -61,5 +61,5 @@ alternative_order text/enriched text/plain text
 source ~/.mutt/gpg
 source ~/.mutt/macroes
 source ~/.mutt/accounts/puria@dyne.org/account
-source ~/.mutt/mutt-colors-solarized-light-256.muttrc
+source ~/.mutt/gruvbox-256
 source ~/.mutt/puria.theme

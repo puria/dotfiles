@@ -5,6 +5,15 @@
 
 - brew:
     - gtm
+    - yarn
+    - gpg
+    - neomutt
+    - vim
+
+- cask:
+    - vlc
+    - adobe-acrobat-pro
+    - 
 
 - link:
     ~/.bash_aliases:

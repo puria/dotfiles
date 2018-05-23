@@ -8,6 +8,9 @@ set record           = "imaps://netstudent.polito.it:993/sent"
 set header_cache     = "$HOME/.mutt/cache/puria@netstudent.polito.it.headers"
 set message_cachedir = "$HOME/.mutt/cache/puria@netstudent.polito.it.bodies"
 set certificate_file = "$HOME/.mutt/certificates/puria@netstudent.polito.it.certificate"
+set ssl_verify_host  = no
+set ssl_verify_dates = no
+
 
 set imap_user        = "puria@netstudent.polito.it"
 set smtp_url         = "smtps://puria@netstudent.polito.it@netstudent.polito.it:587/"
