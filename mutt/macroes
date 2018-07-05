@@ -22,3 +22,6 @@ bind index,pager @ compose-to-sender
 macro index B '<enter-command>toggle sidebar_visible<enter>'
 macro pager B '<enter-command>toggle sidebar_visible<enter>'
 macro index c '<change-folder>?<change-dir><home>^K=<enter>'
+
+bind index \Cs sidebar-toggle-visible
+bind index \Cv sidebar-toggle-virtual

@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="random"
+ZSH_THEME="refined"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -91,3 +91,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH=~/.npm-global/bin:$PATH
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/puria/src/zide/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/puria/src/zide/node_modules/tabtab/.completions/electron-forge.zsh
+eval $(thefuck --alias)
+export LC_ALL=en_us.UTF-8
+alias m="imapfilter && neomutt"

@@ -13,7 +13,6 @@
 - cask:
     - vlc
     - adobe-acrobat-pro
-    - 
 
 - link:
     ~/.bash_aliases:
@@ -23,6 +22,7 @@
         create: true
     ~/.vimrc:
     ~/.zprofile:
+    ~/.mailcap:
     ~/.zshrc:
     ~/.mutt/:
         glob: true
@@ -34,6 +34,10 @@
         path: oh-my-zsh/*
         create: true
         relink: true
+    ~/.imapfilter/config.lua:
+        path: imapfilter/config.lua
+        create: true
+
 
 - shell:
   - [git submodule update --init --recursive, "Installing/updating submodules"]

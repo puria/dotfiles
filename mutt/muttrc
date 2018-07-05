@@ -1,3 +1,7 @@
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats = yes
+
 set move = no
 set imap_keepalive = 900
 ignore *
@@ -56,7 +60,7 @@ auto_view text/x-vcard
 auto_view image/tiff
 
 alternative_order text/enriched text/plain text
-#alternative_order multipart/mixed text/html text/plain
+alternative_order multipart/mixed text/html text/plain
 
 source ~/.mutt/gpg
 source ~/.mutt/macroes

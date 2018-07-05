@@ -8,6 +8,7 @@ set record           = "imaps://mail.dyne.org:993/sent"
 set header_cache     = "$HOME/.mutt/cache/puria@dyne.org.headers"
 set message_cachedir = "$HOME/.mutt/cache/puria@dyne.org.bodies"
 set certificate_file = "$HOME/.mutt/certificates/puria@dyne.org.certificate"
+set imap_check_subscribed
 
 set imap_user        = "puria@dyne.org"
 set smtp_url         = "smtp://puria@dyne.org@mail.dyne.org:587/"
@@ -17,3 +18,5 @@ set status_format    = "═══[ Folder: $imap_user/%f ]════[%r%m mess
 #
 set signature = "$HOME/.mutt/accounts/puria@dyne.org/signature"
 source "gpg -d $HOME/.mutt/accounts/puria@dyne.org/password.gpg |"
+
+lists hackmeeting@inventati.org
