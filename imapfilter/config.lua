@@ -36,6 +36,7 @@ move_ml(dyne, "decode@lists.dyne.org", "DECODE")
 
 move_nl(dyne, "builds@travis-ci.org", "develop")
 move_nl(dyne, "notifications@github.com", "develop")
+move_nl(dyne, "noreply@github.com", "develop")
 move_nl(dyne, "support@github.com", "develop")
 move_ml(dyne, "dev@dyne.org", "develop")
 
