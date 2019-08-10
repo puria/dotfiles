@@ -3,6 +3,11 @@ set query_command = "goobook query %s"
 macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
 bind editor <Tab> complete-query
 
+macro pager A "|~/src/ics_tools/ics_process --accept"  "Accept a calendar event with ics_tools"
+macro pager D "|~/src/ics_tools/ics_process --decline" "Decline a calendar event with ics_tools" 
+macro pager S "|~/src/ics_tools/ics_process --display" "Show a calendar event with ics_tools" 
+
+macro index A "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all new as read"
 macro index S "|/usr/bin/spamassassin -r"
 macro index H "|/usr/bin/sa-learn --ham  --no-rebuild --single"
 macro index R "!/usr/bin/sa-learn --rebuild"
@@ -25,3 +30,13 @@ macro index c '<change-folder>?<change-dir><home>^K=<enter>'
 
 bind index \Cs sidebar-toggle-visible
 bind index \Cv sidebar-toggle-virtual
+
+macro index / \
+	"<enter-command>unset wait_key<enter><shell-escape>/usr/bin/notmuch-mutt --prompt search<enter><change-folder-readonly>~/.cache/notmuch/mutt/results<enter>" \
+    "search mail (using notmuch)"
+macro index <F9> \
+    "<enter-command>unset wait_key<enter><pipe-message>/usr/bin/notmuch-mutt thread<enter><change-folder-readonly>~/.cache/notmuch/mutt/results<enter><enter-command>set wait_key<enter>" \
+    "search and reconstruct owning thread (using notmuch)"
+macro index ¶ "<enter-command>unset wait_key<enter><shell-escape>mbsync -a; notmuch new --quiet 2> /dev/null<return>" "Run mbsync for everything"
+macro index,pager ¤ "<tag-thread><tag-prefix><save-message>=dyne/Inbox<enter>" "Archive thread"
+macro index,pager \ck <pipe-entry>'mutt2calcurse'<enter> 'Add ical events to calcurse'

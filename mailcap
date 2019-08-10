@@ -1,14 +1,4 @@
-# Images
-image/jpeg; $HOME/.mutt/view_attachment.sh %s
-image/pjpeg; $HOME/.mutt/view_attachment.sh %s
-image/png; $HOME/.mutt/view_attachment.sh %s png
-image/gif; $HOME/.mutt/view_attachment.sh %s
-
-# PDFs
-application/pdf; ~/.mutt/view_attachment.sh %s pdf
-
 # HTML
-text/html; ~/.mutt/view_attachment.sh %s html; copiousoutput
-
-# Unidentified files
-application/octet-stream; ~/.mutt/view_attachment.sh %s "-"
+text/html; elinks -dump -dump-charset utf-8 -default-mime-type text/html %s; needsterminal; copiousoutput;
+text/calendar; mutt-ics; copiousoutput
+application/ics; mutt-ics; copiousoutput

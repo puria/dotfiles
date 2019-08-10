@@ -1,7 +1,6 @@
 syn on
-set list listchars=tab:>-,trail:·,eol:¶
 set nu
-set bg=dark
+set bg=light
 set hls
 set incsearch
 set ts=4
@@ -18,14 +17,13 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'git-time-metric/gtm-vim-plugin'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'mattn/emmet-vim'
 call plug#end()
 
-let g:gtm_plugin_status_enabled = 1
+let g:gtm_plugin_status_enabled = 0
 function! AirlineInit()
   if exists('*GTMStatusline')
     call airline#parts#define_function('gtmstatus', 'GTMStatusline')

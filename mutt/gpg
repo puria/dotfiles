@@ -26,6 +26,7 @@
 # %r    In many contexts, mutt passes key IDs to pgp.  %r expands to
 #       a list of key IDs.
 # decode application/pgp
+# set crypt_use_gpgme=no
 set pgp_decode_command="gpg %?p?--passphrase-fd 0? --no-verbose --batch -o - %f"
 
 # verify a pgp/mime signature
@@ -112,4 +113,3 @@ macro compose S "Fgpg -a --clearsign -u 0x57AA9EBCB1DA7141"
 # Save a copy of outgoing email, encrypted to yourself
 #set pgp_self_encrypt=yes
 #set pgp_default_key =0x57AA9EBCB1DA7141
-

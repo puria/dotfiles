@@ -1,3 +1,8 @@
+# Mailboxes are stored here
+set folder = ~/.mail
+# Format in which our messages are stored
+set mbox_type = Maildir
+
 set sidebar_visible
 set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
 set mail_check_stats = yes
@@ -11,16 +16,17 @@ set imap_idle
 #set index_format="%4C %Z %?X?%X& ? %{%d %b} %-12.12L %?M?(#%03M)&(%4c)? %?y?(%.20Y) ?%s"
 
 set envelope_from
+set duplicate_threads=yes
 set copy
 set editor="vim -c 'set tw=76' -c 'set fo=tcq' -c 'set bs=eol' -c 'set spell' -c 'set spelllang=it,en' -c 'set wrap' +8"
 set query_command = "goobook query %s"
 set charset="utf8"
 set send_charset="utf8"
 set edit_headers
-set nomark_old
 set delete
 set include
 set beep_new
+set nomark_old
 set indent_str="> "
 set attribution="On %d, %n <%a> wrote:"
 set quote_regexp="^([A-Za-z ]+>|[]%>:|}-][]>:|}-]*)"
@@ -37,13 +43,14 @@ set sig_dashes
 set pager_index_lines=10
 set folder_format="%2C %t %N %2l %-8.8u %-8.8g %d %f"
 set sort=threads
+set sort_aux=last-date-sent
 set fast_reply
 set forward_quote
 set abort_noattach = ask-yes
 set attach_keyword = "\\<attach(|ed|ments?)|alleg(|o|ato|are)\\>"
+set timeout=30
 unset mime_forward
 
-auto_view text/html application/x-pgp-message
 auto_view application/zip
 auto_view application/x-gzip
 auto_view application/x-gunzip
@@ -55,9 +62,11 @@ auto_view application/x-perl
 auto_view application/x-sh
 auto_view application/x-tcl
 auto_view application/RTF
-auto_view text/html
 auto_view text/x-vcard
 auto_view image/tiff
+auto_view text/calendar
+auto_view application/ics
+
 
 alternative_order text/enriched text/plain text
 alternative_order multipart/mixed text/html text/plain
@@ -65,5 +74,4 @@ alternative_order multipart/mixed text/html text/plain
 source ~/.mutt/gpg
 source ~/.mutt/macroes
 source ~/.mutt/accounts/puria@dyne.org/account
-source ~/.mutt/gruvbox-256
 source ~/.mutt/puria.theme

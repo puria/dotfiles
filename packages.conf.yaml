@@ -1,4 +1,4 @@
-- aptget: [vim, htop, curl, zsh, thefuck]
+- aptget: [vim, htop, curl, zsh, thefuck, imapfilter, build-essential, urlscan]
 
 - shell:
     [chsh -s $(which zsh), "Making default shell to zsh"]

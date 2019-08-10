@@ -1,0 +1,52 @@
+# Automatically create missing mailboxes, both locally and on the server
+Create Both
+# Automatically delete messages on either side if they are found deleted on the other.
+Expunge Both
+# Save the synchronization state files in the relevant directory
+SyncState *
+
+IMAPAccount dyne
+Host mail.dyne.org
+User puria@dyne.org
+PassCmd "pass puria@dyne.org"
+AuthMechs *
+SSLType IMAPS
+
+IMAPStore dyne-remote
+Account dyne
+
+MaildirStore dyne-local
+# The trailing "/" is important
+Path ~/.mail/dyne/
+Inbox ~/.mail/dyne/Inbox
+
+Channel dyne-inbox
+Master :dyne-remote:INBOX
+Slave :dyne-local:Inbox
+
+Channel dyne-sent
+Master :dyne-remote:"Sent"
+slave  :dyne-local:Sent
+
+Channel dyne-trash
+Master :dyne-remote:"Trash"
+slave  :dyne-local:Trash
+
+Channel dyne-draft
+Master :dyne-remote:"Drafts"
+slave  :dyne-local:Drafts
+
+Channel dyne-folders
+Master :dyne-remote:
+Slave :dyne-local:
+# All folders except those defined above
+Patterns * !INBOX !Drafts !Sent !Trash
+
+
+Group dyne
+Channel dyne-inbox
+Channel dyne-trash
+Channel dyne-draft
+Channel dyne-sent
+Channel dyne-folders
+

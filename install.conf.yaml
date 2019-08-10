@@ -17,13 +17,16 @@
 - link:
     ~/.bash_aliases:
     ~/.gitconfig:
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
     ~/.vimrc:
     ~/.zprofile:
     ~/.mailcap:
+    ~/.mbsyncrc:
+    ~/.notmuch-config:
     ~/.zshrc:
+    ~/.msmtprc:
+    ~/.ssh/config:
+        path: ssh/config
+        create: true
     ~/.mutt/:
         glob: true
         path: mutt/*

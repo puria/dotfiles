@@ -1,3 +1,54 @@
+## DYNE ##
+
+host gitea 
+	hostname gitea.dyne.org
+	compression yes
+	identityfile ~/.ssh/spaghetti
+
+host files
+	hostname files.dyne.org
+	compression yes
+	identityfile ~/.ssh/spaghetti
+
+host pilot
+	hostname decidim.decodeproject.eu
+	user puria
+	compression yes
+	identityfile ~/.ssh/spaghetti
+
+
+host rishi
+	hostname rishi.dyne.org
+	port 24344
+	compression yes
+	identityfile ~/.ssh/spaghetti
+
+host elitedesk
+	hostname bridge.elitedesk
+	user puria
+	ProxyCommand ssh -q -x rishi -W elitedesk:22
+	identityfile ~/.ssh/spaghetti
+
+host bot
+	hostname 10.1.33.143
+	User puria
+	IdentityFile ~/.ssh/spaghetti
+	ProxyCommand ssh -p 2236 -q -x bridge.dyne.org -W %h:22 
+	IdentitiesOnly yes
+
+host staging-dddc
+	hostname  10.1.33.136
+	IdentityFile ~/.ssh/spaghetti
+	ProxyCommand ssh -p 2236 -q -x bridge.dyne.org -W %h:22 
+	IdentitiesOnly yes
+
+
+host bridge.dyne.org
+	identityfile ~/.ssh/spaghetti
+
+host *.axant.it
+IdentityFile ~/.ssh/axant
+
 host repo
 hostname repo.axant.it
 user repo
@@ -13,3 +64,38 @@ hostname it37.siteground.eu
 user postinte
 IdentityFile ~/.ssh/axant
 port 18765
+
+
+host github.com
+user git
+identityfile ~/.ssh/spaghetti
+
+host staging
+hostname 188.166.118.71
+user root
+identityfile ~/.ssh/spaghetti
+
+host plusgusto
+hostname 188.166.118.71
+user plusgusto
+identityfile ~/.ssh/spaghetti
+
+
+host erpnext
+hostname 165.227.145.26
+user root
+identityfile ~/.ssh/spaghetti
+
+host git.ff3300.com
+user git
+identityfile ~/.ssh/spaghetti
+
+host www
+hostname axantweb.com
+user root
+identityfile ~/.ssh/axant
+
+host wsgi
+hostname wsgi1.axantweb.com
+user root
+identityfile ~/.ssh/axant
