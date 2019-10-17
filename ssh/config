@@ -1,6 +1,13 @@
 ## DYNE ##
 
-host gitea 
+host sawroom
+	hostname halloween.dyne.org
+	user sawroom
+	compression yes
+	identityfile ~/.ssh/spaghetti
+
+
+host gitea
 	hostname gitea.dyne.org
 	compression yes
 	identityfile ~/.ssh/spaghetti

@@ -1,7 +1,7 @@
 # vim: set ts=8 sw=4 tw=0 ft=muttrc :
 
-source ~/.mutt/gruvbox-256
-# source ~/.mutt/solarized
+# source ~/.mutt/gruvbox-256
+source ~/.mutt/solarized
 
 color index_subject   color64      default   "~R ~s'Fixed|Passed'"
 color index           default     color64    "~U ~s'Fixed|Passed'"
@@ -12,8 +12,8 @@ color index_author    color179     default   "~C dev@dyne.org"
 color status          color179     default
 color index           default     color160   "~U ~s'\\[SPAM\\]'"
 color index           default     color160   "~U ~s'\\[SPAM\\]'"
-color index_flags     color179     default   "~g"
-color index_flags     default     color64    "~G"
+color index_flags     color35     default   "~g"
+color index_flags     default     color35    "~G"
 
 #color body       color188 color237 "^gpg: Good signature.*"
 color body       color115 color236 "^gpg: BAD signature.*"
@@ -25,24 +25,24 @@ color body       color174 color237 "^-----END PGP SIGNATURE-----"
 color body       color174 color237 "^Version: GnuPG.*"
 color body       color174 color237 "^Comment: .*"
 
-color	body	    default color37 	"^gpg: Good signature from.*\\]"
-#color	body	    default color37		"^gpg:.*\\[ultimate\\]"
+color    body        white color37     "^gpg: Good signature from.*\\]"
+#color    body        default color37        "^gpg:.*\\[ultimate\\]"
 
-color	body	    default color174 	"^gpg: Bad signature from"
-color	body	    default color174 	"^gpg: BAD signature from"
-color	body	    default color174 	"^gpg: Note: This key has expired!"
-color	body	    default color136    "^gpg: WARNING: This key is not certified with a trusted signature!"
-color	body	    default color136    "^gpg:          There is no indication that the signature belongs to the owner."
-color	body	    default color136    "^gpg: can't handle these multiple signatures"
-color	body	    default color136    "^gpg: signature verification suppressed"
-color	body	    default color136    "^gpg: invalid node with packet of type"
+color    body        default color174     "^gpg: Bad signature from"
+color    body        default color174     "^gpg: BAD signature from"
+color    body        default color174     "^gpg: Note: This key has expired!"
+color    body        default color136    "^gpg: WARNING: This key is not certified with a trusted signature!"
+color    body        default color136    "^gpg:          There is no indication that the signature belongs to the owner."
+color    body        default color136    "^gpg: can't handle these multiple signatures"
+color    body        default color136    "^gpg: signature verification suppressed"
+color    body        default color136    "^gpg: invalid node with packet of type"
 
 color index         default        color136        "~F"                        # flagged messages
 color index         default        color136        "~F~p"                      # flagged messages to me
-color index         default        color13        "~U ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
-color index         color13        default        "~R ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
-color index         default        color13        "~U ~s'DECODE'"
-color index         color13        default        "~R ~s'DECODE'"
+color index         default        color41        "~U ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
+color index         color41        default        "~R ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
+color index         default        color45        "~U ~s'DECODE'"
+color index         color41        default        "~R ~s'DECODE'"
 color index         default        color216        "~R ~T"                       # tagged messages
-color index         color57       default        "~P"
-color index         color57       default        "~R ~P"
+color index         default        color45        "~P"
+color index         default        color45        "~R ~P"

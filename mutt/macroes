@@ -5,7 +5,8 @@ bind editor <Tab> complete-query
 
 macro pager A "|~/src/ics_tools/ics_process --accept"  "Accept a calendar event with ics_tools"
 macro pager D "|~/src/ics_tools/ics_process --decline" "Decline a calendar event with ics_tools" 
-macro pager S "|~/src/ics_tools/ics_process --display" "Show a calendar event with ics_tools" 
+#macro pager S "|~/src/ics_tools/ics_process --display" "Show a calendar event with ics_tools" 
+macro pager C "|cat" "Add event to cloud" 
 
 macro index A "<tag-pattern>~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all new as read"
 macro index S "|/usr/bin/spamassassin -r"

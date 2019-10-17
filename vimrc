@@ -6,6 +6,9 @@ set incsearch
 set ts=4
 set sw=4
 set nowrap
+set showbreak=↪\
+set listchars=tab:▶\ ,eol:¬,trail:◥,precedes:←,extends:→,nbsp:␣
+set list
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.*/

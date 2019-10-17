@@ -59,7 +59,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian mercurial yarn pip autoenv nvm)
+plugins=(git debian mercurial yarn pip autoenv nvm please)
 
 source $ZSH/oh-my-zsh.sh
 eval $(thefuck --alias)
@@ -102,7 +102,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -s "/home/puria/.jabba/jabba.sh" ] && source "/home/puria/.jabba/jabba.sh"
 
-export PATH="/home/puria/.pyenv/bin:$PATH"
+export PATH="/home/puria/src/emsdk/upstream/emscripten:/home/puria/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 source $(pyenv root)/completions/pyenv.zsh

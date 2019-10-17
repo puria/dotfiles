@@ -30,7 +30,7 @@ function move_ml(account, address, folder)
 end
 
 function move_nl(account, address, folder)
-  messages = account["INBOX"]:contain_from(address)
+  messages = account["INBOX"]:match_from(address)
   messages:move_messages(account[folder])
 end
 
@@ -67,4 +67,6 @@ move_nl(dyne, "cloud@dyne.org", "cloud")
 move_ml(dyne, "sawtooth@lists.hyperledger.org", "hyperledger")
 move_ml(dyne, "main@lists.hyperledger.org", "hyperledger")
 
-
+move_nl(dyne, "biznotif@iso.org", "ISO")
+move_nl(dyne, "livelinkisotc@iso.org", "ISO")
+move_nl(dyne, "/*@iso.org/", "ISO")

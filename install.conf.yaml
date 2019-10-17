@@ -15,6 +15,7 @@
     - adobe-acrobat-pro
 
 - link:
+    ~/.Xresources:
     ~/.bash_aliases:
     ~/.gitconfig:
     ~/.vimrc:
@@ -41,6 +42,8 @@
         path: imapfilter/config.lua
         create: true
 
+- create:
+    ~/bin
 
 - shell:
   - [git submodule update --init --recursive, "Installing/updating submodules"]
