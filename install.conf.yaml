@@ -41,6 +41,12 @@
     ~/.imapfilter/config.lua:
         path: imapfilter/config.lua
         relink: false
+    ~/.config/i3/:
+        glob: true
+        path: i3/*
+    ~/.config/polybar/:
+        glob: true
+        path: polybar/*
 
 - create:
     ~/bin:
