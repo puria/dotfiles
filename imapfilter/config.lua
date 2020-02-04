@@ -20,23 +20,19 @@ dyne = IMAP {
 }
 
 function move_ml(account, address, folder)
-  messages = account["INBOX"]:contain_to(address)
-  messages:move_messages(account[folder])
-  messages = account["INBOX"]:contain_from(address)
-  messages:move_messages(account[folder])
-  messages = account["INBOX"]:contain_cc(address)
-  messages:move_messages(account[folder])
+  account["INBOX"]:contain_to(address):move_messages(account[folder])
+  account["INBOX"]:contain_from(address):move_messages(account[folder])
+  account["INBOX"]:contain_cc(address):move_messages(account[folder])
+  account["INBOX"]:match_field('Reply-To', '.*' .. address .. '.*'):move_messages(account[folder])
   account["INBOX"]:contain_field("List-Id", address):move_messages(account[folder])
 end
 
 function move_nl(account, address, folder)
-  messages = account["INBOX"]:match_from(address)
-  messages:move_messages(account[folder])
+  account["INBOX"]:match_from(address):move_messages(account[folder])
 end
 
 function move_alias(account, address, folder)
-  messages = account["INBOX"]:contain_to(address)
-  messages:move_messages(account[folder])
+  account["INBOX"]:contain_to(address):move_messages(account[folder])
 end
 
 move_ml(dyne, "hackmeeting@inventati.org", "hm")
