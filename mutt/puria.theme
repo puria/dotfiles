@@ -39,10 +39,10 @@ color    body        default color136    "^gpg: invalid node with packet of type
 
 color index         default        color136        "~F"                        # flagged messages
 color index         default        color136        "~F~p"                      # flagged messages to me
-color index         default        color41        "~U ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
-color index         color41        default        "~R ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
+color index         default        color118        "~U ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
+color index         color118        default        "~R ~C'ula@dribia.com|tom.symons@nesta.org.uk|jrodriguezce@bcn.cat|jimb@thoughtworks.com|jbarritt@thoughtworks.com|jordi.buj@jamgo.coop|francesca.bria@gmail.com'"
 color index         default        color45        "~U ~s'DECODE'"
-color index         color41        default        "~R ~s'DECODE'"
+color index         color118        default        "~R ~s'DECODE'"
 color index         default        color216        "~R ~T"                       # tagged messages
-color index         default        color45        "~P"
-color index         default        color45        "~R ~P"
+color index         color233       color45        "~P"
+color index         color233       color45        "~R ~P"

@@ -113,3 +113,6 @@ macro compose S "Fgpg -a --clearsign -u 0x57AA9EBCB1DA7141"
 # Save a copy of outgoing email, encrypted to yourself
 #set pgp_self_encrypt=yes
 #set pgp_default_key =0x57AA9EBCB1DA7141
+set pgp_check_gpg_decrypt_status_fd = no
+
+

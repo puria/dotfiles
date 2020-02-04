@@ -9,6 +9,7 @@ set nowrap
 set showbreak=↪\
 set listchars=tab:▶\ ,eol:¬,trail:◥,precedes:←,extends:→,nbsp:␣
 set list
+set modeline
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.*/

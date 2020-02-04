@@ -1,3 +1,8 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - tap:
@@ -27,23 +32,18 @@
     ~/.msmtprc:
     ~/.ssh/config:
         path: ssh/config
-        create: true
     ~/.mutt/:
         glob: true
         path: mutt/*
-        create: true
-        relink: true
     ~/.oh-my-zsh/:
         glob: true
         path: oh-my-zsh/*
-        create: true
-        relink: true
     ~/.imapfilter/config.lua:
         path: imapfilter/config.lua
-        create: true
+        relink: false
 
 - create:
-    ~/bin
+    ~/bin:
 
 - shell:
   - [git submodule update --init --recursive, "Installing/updating submodules"]

@@ -79,6 +79,8 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$ANDROID_BIN/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export EMSCRIPTEN=/home/puria/src/emsdk/upstream/emscripten
 
 #GPG_TTY=$(tty)
 #export GPG_TTY

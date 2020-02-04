@@ -44,6 +44,7 @@ move_ml(dyne, "decode@lists.dyne.org", "DECODE")
 move_ml(dyne, "trl@lists.dyne.org", "TRL")
 move_ml(dyne, "dyne-ledger@lists.dyne.org", "LEDGER")
 move_ml(dyne, "ledger@lists.dyne.org", "LEDGER")
+move_ml(dyne, "ledger-teams-2019@lists.dyne.org", "LEDGER")
 move_ml(dyne, "dyne-reflow@lists.dyne.org", "REFLOW")
 
 move_nl(dyne, "builds@travis-ci.com", "develop")
@@ -70,3 +71,8 @@ move_ml(dyne, "main@lists.hyperledger.org", "hyperledger")
 move_nl(dyne, "biznotif@iso.org", "ISO")
 move_nl(dyne, "livelinkisotc@iso.org", "ISO")
 move_nl(dyne, "/*@iso.org/", "ISO")
+move_nl(dyne, "evgeny@the-syllabus.com", "syllabus")
+
+
+
+
